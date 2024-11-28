@@ -124,11 +124,10 @@ export default function App() {
     const job_cancel_at = format(time1,'yyyy-MM-dd HH:mm:ss');
 
     // const url = `http://192.168.0.89:5000/info/${ptr_job_id}/${cancel_request_at}/${job_cancel_at}`
-    const url = `${process.env.REACT_APP_PROXY}api/price/431078/2024-11-02%202008:00:00/30000`;
+    const url = `api`;
         
 
-    fetch(url)
-    .then((response) => {console.log(response);})//
+    axios.get(url).then((res)=> {console.log("sdf")})
     // .then((json)=> setOut(json[0]));
 
   }
