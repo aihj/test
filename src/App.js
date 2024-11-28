@@ -126,8 +126,9 @@ export default function App() {
     // const url = `http://192.168.0.89:5000/info/${ptr_job_id}/${cancel_request_at}/${job_cancel_at}`
     const url = `api`;
         
-
-    axios.get(url).then((res)=> {console.log("sdf")})
+    fetch(url)
+        .then((response) => {console.log(response);})//
+        
     // .then((json)=> setOut(json[0]));
 
   }
