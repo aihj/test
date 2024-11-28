@@ -123,7 +123,7 @@ export default function App() {
     const job_cancel_at = format(time1,'yyyy-MM-dd HH:mm:ss');
 
     // const url = `http://192.168.0.89:5000/info/${ptr_job_id}/${cancel_request_at}/${job_cancel_at}`
-    const url = 'api'
+    const url = `http://192.168.0.89:5000`
     
     fetch(url)//json파일 읽어오기
     .then((response) => response.json())//
