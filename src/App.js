@@ -124,7 +124,7 @@ export default function App() {
     const job_cancel_at = format(time1,'yyyy-MM-dd HH:mm:ss');
 
     // const url = `http://192.168.0.89:5000/info/${ptr_job_id}/${cancel_request_at}/${job_cancel_at}`
-    const url = `${process.env.REACT_APP_PROXY}/api/`;
+    const url = `${process.env.REACT_APP_PROXY}api/`;
         
 
     fetch(url)
