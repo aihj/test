@@ -8,7 +8,6 @@ from flask import Flask, request,jsonify, render_template
 from flask_cors import CORS
 
 
-
 pymysql.install_as_MySQLdb()
 HOSTNAME = '192.168.0.120'
 PORT = 3308
@@ -28,9 +27,10 @@ conn = engine.connect()
 
 
 app = Flask(__name__)
+
+
 CORS(app, origins="http://localhost:3000", supports_credentials=True, methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'])
 CORS(app, origins="https://crmcal-88a8f.web.app", supports_credentials=True, methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'])
-CORS(app, origins="https://graceful-pegasus-8374ce.netlify.app", supports_credentials=True, methods=['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'])
 
 
 #서비스
